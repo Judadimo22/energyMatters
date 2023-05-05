@@ -1,12 +1,13 @@
 import React from "react";
 import NavBar from "../../Components/NavBar/NavBar";
-import SliderBanner from "../../Components/Banner/Banner";
 import Videos from "../../Components/Videos/Videos";
 import AboutUs from "../../Components/AboutUs/AboutUs";
 import Carrusel from '../../Components/Carrusel/Carrusel'
 import Member from "../../Components/Member/Member";
 import Footer from "../../Components/Footer/Foooter";
 import BannerSeccion from "../../Components/BannerSeccion/BannerSeccion";
+import Banner from "../../Components/Banner/Banner";
+import Recommended from "../../Components/Recommended/Recommended";
 
 
 
@@ -17,10 +18,10 @@ const Home = () => {
                 <NavBar/>
             </div>
             <div class='mt-[100px]'>
-                <SliderBanner/>
+                <Banner/>
             </div>
             <div class='mt-[100px] mb-[100px]'>
-                <Videos/>
+                <Recommended/>
             </div>
             <div>
                 <AboutUs/>
