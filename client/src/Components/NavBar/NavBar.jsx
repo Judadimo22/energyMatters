@@ -15,7 +15,9 @@ const NavBar = () => {
             </div>
             <div class='md:flex items-center justify-between py-4 md:px-10 px-7 bg-white'>
                 <div class='font-bold text-2xl cursor-pointer flex items-center'>
+                    <Link to='/'>
                     <img class='w-[200px]' src={logo} alt="" />
+                    </Link>
                 </div>
                 <div onClick={() => setOpen(!open)} class='text-3xl absolute right-8 top-[65px] cursor-pointer md:hidden'>
                 <ion-icon name={open ? 'close': 'menu'}></ion-icon>

@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import PageAbout from './Pages/PageAbout/PageAbout';
 import PageNews from './Pages/PageNews/PageNews';
-import Contact from './Pages/Contact/Contact';
+import Contact from './Pages/Contact/COntact';
 import PageServices from './Pages/PageServices/PageServices';
 import Marketing from './Pages/Marketing/Marketing';
 import Comunications from './Pages/Comunications/Comunications';
