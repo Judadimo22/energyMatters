@@ -11,6 +11,8 @@ import Digital from './Pages/Digital/Digital';
 import Media from './Pages/Media/Media';
 import Events from './Pages/Events/Events';
 import Investments from './Pages/Investments/Investments';
+import DetailPage from './Pages/DetailPage/DetailPage';
+import CreateNotice from './Components/Admin/CreateNew/CreateNew';
 
 
 
@@ -20,7 +22,6 @@ import Investments from './Pages/Investments/Investments';
 function App() {
   return (
     <BrowserRouter>
-    <div className='App'>
       <Switch>
         <Route exact path= '/' component={Home}/>
         <Route exact path= '/aboutUs' component={PageAbout}/>
@@ -33,8 +34,9 @@ function App() {
         <Route exact path= '/media' component={Media}/>
         <Route exact path= '/events' component={Events}/>
         <Route exact path= '/investments' component={Investments}/>
+        <Route exact path= '/details/:id' component={DetailPage}/>
+        <Route exact path= '/create' component={CreateNotice}/>
       </Switch>
-    </div>
     </BrowserRouter>
   );
 }

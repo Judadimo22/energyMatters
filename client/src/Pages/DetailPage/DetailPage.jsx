@@ -4,15 +4,16 @@ import Footer from "../../Components/Footer/Foooter";
 import NavBar from "../../Components/NavBar/NavBar";
 import News from "../../Components/News/News";
 import { NewsContainer } from "../../Components/NewsContainer/NewsContainer";
+import { Details } from "../../Components/Detail/Detail";
 
-const PageNews = () => {
+const DetailPage = () => {
     return(
         <div>
             <div class='mb-[150px]'>
                 <NavBar/>
             </div>
             <div class='my-[20px]'>
-                <NewsContainer/>
+                <Details/>
             </div>
             <div>
                 <Footer/>
@@ -21,4 +22,4 @@ const PageNews = () => {
     )
 };
 
-export default PageNews;
+export default DetailPage;

@@ -32,7 +32,7 @@ const Home = () => {
             <div class='my-[50px]'>
                 <Member/>
             </div>
-            <div>
+            <div className='bg-[#e0e0e0]'>
                 <Footer/>
             </div>
             <div>
