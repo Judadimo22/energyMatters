@@ -13,6 +13,7 @@ import Events from './Pages/Events/Events';
 import Investments from './Pages/Investments/Investments';
 import DetailPage from './Pages/DetailPage/DetailPage';
 import CreateNotice from './Components/Admin/CreateNew/CreateNew';
+import LoginPage from './Pages/LoginPage/LoginPage';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route exact path= '/investments' component={Investments}/>
         <Route exact path= '/details/:id' component={DetailPage}/>
         <Route exact path= '/create' component={CreateNotice}/>
+        <Route exact path= '/admin' component={LoginPage}/>
       </Switch>
     </BrowserRouter>
   );
