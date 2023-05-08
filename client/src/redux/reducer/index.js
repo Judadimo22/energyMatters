@@ -3,12 +3,15 @@ import {
     GET_BY_ID,
     GET_USERS,
     POST_USERS,
-    GET_USER_BY_ID
+    GET_USER_BY_ID,
+    GET_NEWS_ADMIN
  } from "../actions";
 
 const initialState ={
     News: [],
     NewsCopy: [],
+    NewsAdmin: [],
+    NewsAdminCopy: [],
     Details: [],
     Users: [],
     UsersCopy: [],
@@ -24,6 +27,12 @@ function rootReducer (state= initialState, action) {
                 News: action.payload,
                 NewsCopy: action.payload
             }
+        case GET_NEWS_ADMIN:
+            return{
+                ...state,
+                NewsAdmin: action.payload,
+                NewsAdminCopy: action.payload
+            };
         case GET_BY_ID:
             return{
                 ...state,

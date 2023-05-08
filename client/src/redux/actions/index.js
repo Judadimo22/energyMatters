@@ -4,7 +4,8 @@ export const GET_BY_ID = 'GET_BY_ID';
 export const GET_USERS = 'GET_USERS';
 export const UPDATE_USER = 'UPDATE_USER';
 export const POST_USERS = 'POST_USERS';
-export const GET_USER_BY_ID = 'GET_USER_BY_ID'
+export const GET_USER_BY_ID = 'GET_USER_BY_ID';
+export const GET_NEWS_ADMIN = 'GET_NEWS_ADMIN'
 
 
 export function getNews() {
@@ -12,6 +13,15 @@ export function getNews() {
       let json = await axios.get(`http://localhost:3001/news`);
       dispatch({
         type: GET_NEWS,
+        payload: json.data,
+      });
+    };
+  }
+  export function getNewsAdmin() {
+    return async function (dispatch) {
+      let json = await axios.get(`http://localhost:3001/news`);
+      dispatch({
+        type: GET_NEWS_ADMIN,
         payload: json.data,
       });
     };
@@ -36,6 +46,8 @@ export function getNews() {
       });
     };
   }
+
+
 
   export function updateUser (id, payload){
     return async function (dispatch) {

@@ -14,6 +14,7 @@ import Investments from './Pages/Investments/Investments';
 import DetailPage from './Pages/DetailPage/DetailPage';
 import CreateNotice from './Components/Admin/CreateNew/CreateNew';
 import LoginPage from './Pages/LoginPage/LoginPage';
+import DashboardPage from './Pages/DashboardPage/DashboardPage';
 
 
 
@@ -37,7 +38,8 @@ function App() {
         <Route exact path= '/investments' component={Investments}/>
         <Route exact path= '/details/:id' component={DetailPage}/>
         <Route exact path= '/create' component={CreateNotice}/>
-        <Route exact path= '/admin' component={LoginPage}/>
+        <Route exact path= '/admin/em' component={LoginPage}/>
+        <Route exact path= '/dashboard' component={DashboardPage}/>
       </Switch>
     </BrowserRouter>
   );

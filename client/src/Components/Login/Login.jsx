@@ -31,7 +31,9 @@ const Login = () => {
           };
 
           console.log(newUser);
-          dispatch(createUser(newUser));
+          dispatch(createUser(newUser)).then(
+            (e) => (window.location.href = `/dashboard`)
+          );
         } else {
           setInfoUser(userDb);
         }
@@ -45,7 +47,7 @@ const Login = () => {
 
   return (
     <>
-      <div>
+      <div className="flex justify-center items-center">
         <div>
           {isAuthenticated ? (
               <div>
