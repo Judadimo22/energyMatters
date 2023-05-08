@@ -4,7 +4,8 @@ import {
     GET_USERS,
     POST_USERS,
     GET_USER_BY_ID,
-    GET_NEWS_ADMIN
+    GET_NEWS_ADMIN,
+    UPDATE_NEW
  } from "../actions";
 
 const initialState ={
@@ -54,6 +55,10 @@ function rootReducer (state= initialState, action) {
                ...state,
                user: action.payload,
         };
+        case UPDATE_NEW:
+            return{
+                ...state
+            }
         default: return state
     }
 };

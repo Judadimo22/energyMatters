@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useDispatch, useSelector } from "react-redux";
 import { LoginButton } from "../LoginButton/LoginButton";
+import { BiLogOut } from "react-icons/bi";
+
 
 const AdminNavBar = () => {
     const [open, setOpen] = useState(false)
@@ -39,7 +41,7 @@ const AdminNavBar = () => {
                 <h1 className="mr-[20px]">
                     Hello {user.name}
                 </h1>
-                <button onClick={() => logout()}>Logout</button>
+                <button  onClick={() => logout()}><BiLogOut/></button>
               </div>
           ) : (
             <LoginButton />

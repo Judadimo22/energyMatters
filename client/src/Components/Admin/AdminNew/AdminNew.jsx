@@ -11,7 +11,7 @@ export const AdminNew = (props) => {
   const noticeDescription = props.notice.description
 
   return (
-    <Link to={`details/${props.notice._id}`}>
+    <Link to={`edit/${props.notice._id}`}>
       <div className= 'mx-[10px] border-gray-400 border-2 px-[10px] py-[10px] cursor-auto flex justify-between my-[10px]'>
       <h1 className="text-[16px] mb-[2px]"><strong>{noticeName}</strong></h1>
       <div className="flex justify-between mx-[20px]">

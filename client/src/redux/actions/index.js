@@ -5,7 +5,8 @@ export const GET_USERS = 'GET_USERS';
 export const UPDATE_USER = 'UPDATE_USER';
 export const POST_USERS = 'POST_USERS';
 export const GET_USER_BY_ID = 'GET_USER_BY_ID';
-export const GET_NEWS_ADMIN = 'GET_NEWS_ADMIN'
+export const GET_NEWS_ADMIN = 'GET_NEWS_ADMIN';
+export const UPDATE_NEW = 'UPDATE_NEW'
 
 
 export function getNews() {
@@ -22,6 +23,15 @@ export function getNews() {
       let json = await axios.get(`http://localhost:3001/news`);
       dispatch({
         type: GET_NEWS_ADMIN,
+        payload: json.data,
+      });
+    };
+  }
+  export function updateNew(id, payload) {
+    return async function (dispatch) {
+      const json = await axios.put(`http://localhost:3001/news/${id}`, payload);
+      return dispatch({
+        type: UPDATE_NEW,
         payload: json.data,
       });
     };

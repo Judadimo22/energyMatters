@@ -15,6 +15,8 @@ import DetailPage from './Pages/DetailPage/DetailPage';
 import CreateNotice from './Components/Admin/CreateNew/CreateNew';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import DashboardPage from './Pages/DashboardPage/DashboardPage';
+import EditNew from './Components/Admin/EditNew/EditNew';
+import Edit from './Pages/Edit/Edit';
 
 
 
@@ -40,6 +42,7 @@ function App() {
         <Route exact path= '/create' component={CreateNotice}/>
         <Route exact path= '/admin/em' component={LoginPage}/>
         <Route exact path= '/dashboard' component={DashboardPage}/>
+        <Route exact path= '/edit/:id' component={Edit}/>
       </Switch>
     </BrowserRouter>
   );
