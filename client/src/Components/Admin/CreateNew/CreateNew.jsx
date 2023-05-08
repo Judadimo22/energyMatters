@@ -59,10 +59,7 @@ function CreateNotice() {
 
   return (
     <div>
-      <div>
-        <AdminNavBar/>
-      </div>
-      <div className="pt-[150px]">
+      <div className="pt-[10px]">
         <h1 className="text-[40px] text-center">
           <strong> Create New</strong>
         </h1>

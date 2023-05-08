@@ -18,6 +18,7 @@ import LoginPage from './Pages/LoginPage/LoginPage';
 import DashboardPage from './Pages/DashboardPage/DashboardPage';
 import EditNew from './Components/Admin/EditNew/EditNew';
 import Edit from './Pages/Edit/Edit';
+import CreatePage from './Pages/CreatePage/CreatePage';
 axios.defaults.baseURL = "https://backend-energymaters.onrender.com"
 // axios.defaults.baseURL = "http://localhost:3001"
 
@@ -37,7 +38,7 @@ function App() {
         <Route exact path= '/events' component={Events}/>
         <Route exact path= '/investments' component={Investments}/>
         <Route exact path= '/details/:id' component={DetailPage}/>
-        <Route exact path= '/create' component={CreateNotice}/>
+        <Route exact path= '/create' component={CreatePage}/>
         <Route exact path= '/admin/em' component={LoginPage}/>
         <Route exact path= '/dashboard' component={DashboardPage}/>
         <Route exact path= '/edit/:id' component={Edit}/>

@@ -55,20 +55,20 @@ const EditNew = () => {
     <div>
         <form onSubmit={handleSubmitInfo}>
           <div className="text-center">
-            <h1>
+            <h1 className="text-[40px]">
               EditProduct
             </h1>
           </div>
           <div className="px-[50px]">
           <div>
-            <h1>Name</h1>
-            <input onChange={(e) =>handleInputChange(e)} type="text" key='name' name='name' value={inputInfo.name}/>
+            <h1><strong>Name</strong></h1>
+            <input className="border-2 w-full" onChange={(e) =>handleInputChange(e)} type="text" key='name' name='name' value={inputInfo.name}/>
           </div>
           <div>
-            <h1>Description</h1>
-            <textarea className="w-full h-[150px]" onChange={(e) =>handleInputChange(e)} type="text" key='description' name='description' value={inputInfo.description}/>
+            <h1><strong>Description</strong></h1>
+            <textarea  className="w-full h-[150px] border-2" onChange={(e) =>handleInputChange(e)} type="text" key='description' name='description' value={inputInfo.description}/>
           </div>
-          <div>
+          <div className="text-center justify-center  mt-[10px] bg-blue-800 py-[2px] text-white">
             <button type="submit">
               Update info
             </button>

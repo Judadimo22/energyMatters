@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Dashboard from "../../Components/Dashboard/Dashboard";
 import AdminNavBar from "../../Components/AdminNavBar/AdminNavBar";
+import EditNew from "../../Components/Admin/EditNew/EditNew";
 import { useDispatch, useSelector } from "react-redux";
 import { useAuth0 } from "@auth0/auth0-react";
+import axios from "axios";
 import { createUser, getUserById } from "../../redux/actions";
-import { Link } from "react-router-dom";
+import CreateNotice from "../../Components/Admin/CreateNew/CreateNew";
 
-const DashboardPage = () => {
+const CreatePage = () => {
     const dispatch = useDispatch();
     const { isAuthenticated, user, logout } = useAuth0();
     const [infoUser, setInfoUser] = useState({});
@@ -37,23 +37,17 @@ const DashboardPage = () => {
           });
       }
     }, [user]);
-    if (userState.roll === "user") window.location.href = "/";
+    if (userState.roll !== "admin") window.location.href = "/";
     return(
         <div>
             <div>
                 <AdminNavBar/>
             </div>
-            <div className="pt-[200px]">
-                <Dashboard/>
-                <Link to='/create'>
-                  <div className="text-center justify-center mx-[30px] mt-[10px] bg-blue-800 py-[2px] text-white">
-                  <button >Create </button>
-                  </div>
-                </Link>
+            <div className="pt-[150px]">
+                <CreateNotice/>
             </div>
         </div>
     )
 };
 
-
-export default DashboardPage;
+export default CreatePage;
