@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Dashboard from "../../Components/Dashboard/Dashboard";
 import AdminNavBar from "../../Components/AdminNavBar/AdminNavBar";
@@ -36,7 +36,7 @@ const DashboardPage = () => {
           });
       }
     }, [user]);
-    if (userState.roll === "user") window.location.href = "/";
+    if (userState.roll !== "admin") window.location.href = "/";
     return(
         <div>
             <div>
