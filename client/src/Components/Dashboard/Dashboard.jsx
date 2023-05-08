@@ -35,7 +35,7 @@ const Dashboard = () => {
           });
       }
     }, [user]);
-    if (userState.roll === "user") window.location.href = "/";
+    if (userState.roll !== "user") window.location.href = "/";
     return(
         <div className="text-center">
           <div>
