@@ -1,4 +1,5 @@
 import './App.css';
+import axios from 'axios';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import PageAbout from './Pages/PageAbout/PageAbout';
@@ -17,11 +18,7 @@ import LoginPage from './Pages/LoginPage/LoginPage';
 import DashboardPage from './Pages/DashboardPage/DashboardPage';
 import EditNew from './Components/Admin/EditNew/EditNew';
 import Edit from './Pages/Edit/Edit';
-
-
-
-
-
+axios.defaults.baseURL = "https://backend-energymaters.onrender.com/"
 
 function App() {
   return (

@@ -41,7 +41,7 @@ function CreateNotice() {
     };
 
     const response2 = await fetch(
-      "http://localhost:3001/news",
+      "https://backend-energymaters.onrender.com//news",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
