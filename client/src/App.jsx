@@ -18,7 +18,8 @@ import LoginPage from './Pages/LoginPage/LoginPage';
 import DashboardPage from './Pages/DashboardPage/DashboardPage';
 import EditNew from './Components/Admin/EditNew/EditNew';
 import Edit from './Pages/Edit/Edit';
-axios.defaults.baseURL = "https://backend-energymaters.onrender.com/"
+axios.defaults.baseURL = "https://backend-energymaters.onrender.com"
+// axios.defaults.baseURL = "http://localhost:3001"
 
 function App() {
   return (

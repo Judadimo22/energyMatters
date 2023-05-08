@@ -36,7 +36,7 @@ const DashboardPage = () => {
           });
       }
     }, [user]);
-    if (userState.roll !== "admin") window.location.href = "/";
+    if (userState.roll === "user") window.location.href = "/";
     return(
         <div>
             <div>
