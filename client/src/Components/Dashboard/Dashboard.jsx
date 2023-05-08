@@ -14,7 +14,7 @@ const Dashboard = () => {
     useEffect(() => {
       if (user && isAuthenticated) {
         axios
-          .get("https://backend-energymaters.onrender.com//users")
+          .get("https://backend-energymaters.onrender.com/users")
           .then((element) => {
             const userDb = element.data.find(
               (element) => element.email === user.email
