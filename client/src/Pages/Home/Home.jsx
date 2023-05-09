@@ -26,9 +26,9 @@ const Home = () => {
             <div>
                 <AboutUs/>
             </div>
-            <div class='mt-[70px] mb-[100px]'>
+            {/* <div class='mt-[70px] mb-[100px]'>
                 <Carrusel/>
-            </div>
+            </div> */}
             <div class='my-[50px]'>
                 <Member/>
             </div>
