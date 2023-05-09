@@ -41,7 +41,7 @@ function CreateNotice() {
     };
 
     const response2 = await fetch(
-      "https://backend-energymaters.onrender.com//news",
+      "https://backend-energymaters.onrender.com/news",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

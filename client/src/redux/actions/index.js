@@ -18,6 +18,7 @@ export function getNews() {
       });
     };
   }
+
   export function getNewsAdmin() {
     return async function (dispatch) {
       let json = await axios.get(`/news`);
