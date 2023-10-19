@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
-import imagen from '../../../img/banner/imagen_banner.jpg'
+import imagen from '../../../img/imagenForm.jpg'
 import AdminNavBar from "../../AdminNavBar/AdminNavBar";
 
 function CreateNotice() {
